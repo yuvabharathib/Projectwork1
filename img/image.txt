@@ -1,0 +1,11 @@
+
+System architecture
+<img width="1536" height="1024" alt="ChatGPT Image Dec 22, 2025, 08_11_34 PM" src="https://github.com/user-attachments/assets/a7bdaa09-950d-455a-af8b-0a5b46800072" />
+
+
+ Output1 - Traffic Violation Detection
+![out1](https://github.com/user-attachments/assets/6d855454-9bc9-49e8-8e64-0152e669e39f)
+
+
+Output2 - Automatic Challan Generation
+![out2](https://github.com/user-attachments/assets/ed7d873a-725a-4d26-9d74-0923c0021d65)

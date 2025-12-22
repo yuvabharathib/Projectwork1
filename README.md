@@ -1,59 +1,51 @@
-## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+## TRAFFIC RULES VIOLATION CHALLAN GENERATION USING AI
+The AI-Powered Automatic Traffic Challan Generation System automates the detection of traffic violations using computer vision and deep learning techniques, enabling real-time monitoring, license plate recognition, and automatic digital challan generation to improve road safety and enforcement efficiency.
 
 ## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+AI-Powered Automatic Traffic Challan Generation System is an intelligent traffic enforcement solution that leverages Artificial Intelligence, Machine Learning, and Computer Vision to detect traffic rule violations automatically. Traditional traffic monitoring relies heavily on manual supervision, which is time-consuming, error-prone, and limited in coverage.
+
+This system uses high-resolution surveillance cameras to capture real-time traffic video streams. Advanced deep learning models such as YOLO (You Only Look Once) are employed to detect violations like red-light jumping, helmet non-compliance, overspeeding, and triple riding. Once a violation is detected, Optical Character Recognition (OCR) is used to extract the vehicle’s license plate number. The extracted data is verified with the RTO database, and a digital challan is generated automatically and sent to the vehicle owner via SMS or email.
 
 ## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
-
+* Real-time traffic violation detection using YOLO
+* Automated license plate recognition using OCR
+* Automatic digital challan generation
+* Integration with RTO database for owner verification
+* SMS and email notification system
+* Secure storage of violation evidence (images & videos)
+* High scalability for smart city deployment
+* Reduced human dependency and enforcement bias
+* Data-driven traffic analytics and reporting
+  
 ## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
-
+* Operating System: Windows 10 (64-bit) or Ubuntu (64-bit)
+* Development Environment: Python 3.7 or later
+* Frameworks & Libraries: TensorFlow (2.x),OpenCV,YOLO (YOLOv3 / YOLOv5),Tesseract OCR,NumPy,scikit-learn
+* Tools:VS Code (IDE),Git (Version Control)
+* Hardware: High-resolution CCTV / IP Cameras,GPU (recommended for faster training and inference)
+  
 ## System Architecture
 <!--Embed the system architecture diagram as shown below-->
-
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
-
+<img width="1536" height="1024" alt="ChatGPT Image Dec 22, 2025, 08_11_34 PM" src="https://github.com/user-attachments/assets/a7bdaa09-950d-455a-af8b-0a5b46800072" />
 
 ## Output
 
 <!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+#### Output1 - Traffic Violation Detection
+![out1](https://github.com/user-attachments/assets/6d855454-9bc9-49e8-8e64-0152e669e39f)
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
-
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
-
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
-
+#### Output2 - Automatic Challan Generation
+![out2](https://github.com/user-attachments/assets/ed7d873a-725a-4d26-9d74-0923c0021d65)
 
 ## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+The AI-Powered Automatic Traffic Challan Generation System significantly improves traffic law enforcement by automating violation detection and penalty issuance. It reduces manual workload, minimizes errors, and ensures fair and transparent enforcement.
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+The system enhances road safety by discouraging repeated violations through timely notifications. It also provides valuable analytics for authorities to identify accident-prone zones and improve traffic planning. The project demonstrates the effective application of AI and computer vision in smart city infrastructure and intelligent transportation systems.
 
 ## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
-
+1.Redmon, J., & Farhadi, A. (2018). YOLOv3: An Incremental Improvement. arXiv:1804.02767
+2.Shafiee, M., et al. (2019). Automatic License Plate Recognition Using Deep Learning. IEEE Transactions on Intelligent Transportation Systems
+3.Bhattacharya, S., & Singh, R. (2020). AI and Computer Vision for Traffic Monitoring. IJARCS
 
 
 

@@ -43,9 +43,11 @@ The AI-Powered Automatic Traffic Challan Generation System significantly improve
 The system enhances road safety by discouraging repeated violations through timely notifications. It also provides valuable analytics for authorities to identify accident-prone zones and improve traffic planning. The project demonstrates the effective application of AI and computer vision in smart city infrastructure and intelligent transportation systems.
 
 ## Articles published / References
-1.Redmon, J., & Farhadi, A. (2018). YOLOv3: An Incremental Improvement. arXiv:1804.02767
-2.Shafiee, M., et al. (2019). Automatic License Plate Recognition Using Deep Learning. IEEE Transactions on Intelligent Transportation Systems
-3.Bhattacharya, S., & Singh, R. (2020). AI and Computer Vision for Traffic Monitoring. IJARCS
+1. Redmon, J., & Farhadi, A. (2018). YOLOv3: An Incremental Improvement. arXiv:1804.02767.
+
+2. Shafiee, M., et al. (2019). Automatic License Plate Recognition Using Deep Learning. IEEE Transactions on Intelligent Transportation Systems.
+
+3. Bhattacharya, S., & Singh, R. (2020). AI and Computer Vision for Traffic Monitoring. IJARCS.
 
 
 

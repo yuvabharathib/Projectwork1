@@ -1,10 +1,194 @@
-<html>
-  <head>
-    <title>
-      My Project
-    </title>
-  </head>
-  <body>
-    <h1> My Project </h1>
-  </body>
+.section h2{
+
+    color:#1a355b;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.upload-box{
+
+    border:1px solid #ccc;
+
+    padding:25px;
+
+    border-radius:6px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+}
+
+
+
+.upload-box input{
+
+    margin-top:10px;
+
+}
+
+
+
+.upload-box button{
+
+    margin-top:18px;
+
+    padding:10px 25px;
+
+    background:#1a355b;
+
+    color:white;
+
+    border:none;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+}
+
+
+
+.upload-box button:hover{
+
+    background:#243f6e;
+
+}
+
+
+
+.status{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    color:#1a355b;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+
+
+th,td{
+
+    border:1px solid #ccc;
+
+    padding:10px;
+
+}
+
+<header>
+<h1>Traffic Violation and E Challan Generator</h1>
+<p>Automatic Traffic Monitoring System</p>
+</header>
+
+<div class="container">
+
+<h2>Upload Traffic Video</h2>
+
+<div class="upload-box">
+<p>Select a traffic surveillance video</p>
+<input type="file" id="videoFile" accept="video/*">
+<br>
+<button onclick="checkVideo()">Start Checking</button>
+<div class="status" id="statusText"></div>
+</div>
+
+<h2 id="resultTitle" class="hide">Detected Violations</h2>
+
+<table id="resultTable" class="hide">
+<tr>
+<th>Vehicle Number</th>
+<th>Violation Type</th>
+<th>Fine</th>
+<th>Date and Time</th>
+</tr>
+<tbody id="resultBody"></tbody>
+</table>
+
+<h2 id="challanTitle" class="hide">E Challan</h2>
+
+<div class="box hide" id="challanBox"></div>
+
+</div>
+
+<footer>
+Traffic Enforcement Automation Project
+</footer>
+
+<script>
+function checkVideo(){
+var input = document.getElementById("videoFile");
+var text = document.getElementById("statusText");
+
+if(input.files.length === 0){
+text.style.color = "red";
+text.innerText = "Please upload a video file";
+return;
+}
+
+text.style.color = "#1a355b";
+text.innerText = "Video is being processed";
+
+setTimeout(function(){
+text.innerText = "Traffic violation detected";
+showData();
+},1500);
+}
+
+function showData(){
+var list = [
+{num:"TN11AB3456", vio:"No Helmet", fine:"₹1000"},
+{num:"TN09CD7890", vio:"Red Light Violation", fine:"₹2000"}
+];
+
+document.getElementById("resultTitle").classList.remove("hide");
+document.getElementById("resultTable").classList.remove("hide");
+
+var body = document.getElementById("resultBody");
+body.innerHTML = "";
+
+for(var i=0;i<list.length;i++){
+var row = document.createElement("tr");
+row.innerHTML =
+"<td>"+list[i].num+"</td>"+
+"<td>"+list[i].vio+"</td>"+
+"<td>"+list[i].fine+"</td>"+
+"<td>"+new Date().toLocaleString()+"</td>";
+body.appendChild(row);
+}
+
+makeChallan(list[0]);
+}
+
+function makeChallan(data){
+document.getElementById("challanTitle").classList.remove("hide");
+var box = document.getElementById("challanBox");
+box.classList.remove("hide");
+
+box.innerHTML =
+"<p><b>Vehicle Number:</b> "+data.num+"</p>"+
+"<p><b>Violation:</b> "+data.vio+"</p>"+
+"<p><b>Fine Amount:</b> "+data.fine+"</p>"+
+"<p><b>Date:</b> "+new Date().toLocaleString()+"</p>"+
+"<p><b>Payment Status:</b> Pending</p>";
+}
+</script>
+
+</body>
 </html>
